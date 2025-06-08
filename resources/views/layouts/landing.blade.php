@@ -54,15 +54,15 @@ $backgroundColor = $data['background_color'] ?? '#131313';
     <div class="min-h-screen bg-gray-100">
 
         <!-- Page Heading -->
-        <header class="fixed flex items-center justify-center py-4 bg lg:px-20 w-full">
-            <div class="flex items-center justify-around w-full space-x-2 bg-gray-900 border shadow-sm rounded-full px-8 py-4 backdrop-blur-md bg-opacity-10">
+        <header class="fixed flex items-center justify-center pt-4 w-full text-white">
+            <div class="flex items-center justify-around space-x-4 lg:space-x-24 bg-gray-800 rounded-full px-8 py-5 backdrop-blur-md bg-opacity-30">
                 <div class="cursor-pointer text-2xl font-bold text-primary">
                     AZIUS
                 </div>
 
                 <div class="flex items-center space-x-8">
                     @foreach ($navigation as $nav)
-                    <a href="{{ $nav['url'] }}" class="text-gray-500 hover:text-primary duration-300">
+                    <a href="{{ $nav['url'] }}" class="text-gray-300 hover:text-primary duration-300">
                         {{ $nav['title'] }}
                     </a>
                     @endforeach
@@ -70,7 +70,7 @@ $backgroundColor = $data['background_color'] ?? '#131313';
 
                 <div class="flex items-center space-x-6">
                     @foreach ($socials as $social)
-                    <a href="{{ $social['url'] }}" class="text-gray-500 hover:text-primary duration-300">
+                    <a href="{{ $social['url'] }}" class="text-gray-300 hover:text-primary duration-300">
                         {{ $social['title'] }}
                         {{-- <i class="{{ $social['icon'] }}"></i> --}}
                     </a>

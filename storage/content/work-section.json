@@ -1,12 +1,12 @@
 {
     "id": "work-section",
-    "title": "О нас",
+    "title": "Наша продукция",
     "subtitle": "AZIUS - мультипроектная компания, базирующаяся в г. Бишкек, Кыргызстан. Компания производит переработанные сельскохозяйственные продукты премиального качества, материалы для горной промышленности и ведет проекты жилищного строительства.",
-    "backgroundImage": {
+    "background_image": {
         "src": "https://example.com/background.jpg",
         "alt": "Background Image"
     },
-    "backgroundColor": "#f0f0f0",
+    "background_color": "#f0f0f0",
     "items": [
         {
             "title": "",

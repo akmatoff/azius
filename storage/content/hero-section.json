@@ -4,11 +4,11 @@
         "src": "https://example.com/logo.png",
         "alt": "Company Logo"
     },
-    "title": "Премиальные продукты из родины заснеженных вершин и уникальных историй.",
-    "subtitle": "",
-    "backgroundImage": {
+    "title": "Azius",
+    "subtitle": "Премиальные продукты из родины заснеженных вершин и уникальных историй.",
+    "background_image": {
         "src": "https://example.com/background.jpg",
         "alt": "Background Image"
     },
-    "backgroundColor": "#f0f0f0"
+    "background_color": "#131313"
 }
