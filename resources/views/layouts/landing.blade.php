@@ -55,10 +55,10 @@ $backgroundColor = $data['background_color'] ?? '#131313';
 
         <!-- Page Heading -->
         <header class="fixed flex items-center justify-center pt-4 w-full text-white">
-            <div class="flex items-center justify-around space-x-4 lg:space-x-24 bg-gray-800 rounded-full px-8 py-5 backdrop-blur-md bg-opacity-30">
-                <div class="cursor-pointer text-2xl font-bold text-primary">
+            <div class="flex items-center justify-around space-x-4 lg:space-x-24 bg-black rounded-full px-8 py-5 backdrop-blur-md bg-opacity-75 shadow-sm">
+                <a href="#hero-section" class="block cursor-pointer text-2xl font-bold text-primary">
                     AZIUS
-                </div>
+                </a>
 
                 <div class="flex items-center space-x-8">
                     @foreach ($navigation as $nav)
