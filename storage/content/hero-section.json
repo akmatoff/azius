@@ -1,0 +1,14 @@
+{
+    "id"    : "hero-section",
+    "logo": {
+        "src": "https://example.com/logo.png",
+        "alt": "Company Logo"
+    },
+    "title": "Премиальные продукты из родины заснеженных вершин и уникальных историй.",
+    "subtitle": "",
+    "backgroundImage": {
+        "src": "https://example.com/background.jpg",
+        "alt": "Background Image"
+    },
+    "backgroundColor": "#f0f0f0"
+}

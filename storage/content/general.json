@@ -1,0 +1,32 @@
+{
+    "title": "Azius",
+    "logo": "",
+    "primary_color": "#4F46E5",
+    "background_color": "#131313",
+    "socials": [
+        {
+            "title": "Instagram",
+            "url": "https://www.instagram.com/yourprofile",
+            "icon": "https://example.com/icons/instagram.svg"
+        },
+        {
+            "title": "WhatsApp",
+            "url": "https://www.instagram.com/yourprofile",
+            "icon": "https://example.com/icons/instagram.svg"
+        }
+    ],
+    "navigation": [
+        {
+            "title": "О нас",
+            "url": "#about-section"
+        },
+        {
+            "title": "Сферы деятельности",
+            "url": "#work-section"
+        },
+        {
+            "title": "Контакты",
+            "url": "#footer"
+        }
+    ]
+}
