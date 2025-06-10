@@ -7,12 +7,12 @@
         {
             "title": "Instagram",
             "url": "https://www.instagram.com/yourprofile",
-            "icon": "https://example.com/icons/instagram.svg"
+            "icon": "mdi:instagram"
         },
         {
             "title": "WhatsApp",
             "url": "https://www.instagram.com/yourprofile",
-            "icon": "https://example.com/icons/instagram.svg"
+            "icon": "mdi:whatsapp"
         }
     ],
     "navigation": [

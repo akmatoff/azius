@@ -25,6 +25,8 @@ $backgroundColor = $data['background_color'] ?? '#131313';
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+
     <style>
         :root {
             --primary-color: {
@@ -54,15 +56,15 @@ $backgroundColor = $data['background_color'] ?? '#131313';
     <div class="min-h-screen bg-gray-100">
 
         <!-- Page Heading -->
-        <header class="fixed flex items-center justify-center pt-4 w-full text-white">
-            <div class="flex items-center justify-around space-x-4 lg:space-x-24 bg-black rounded-full px-8 py-5 backdrop-blur-md bg-opacity-75 shadow-sm">
+        <header class="fixed flex items-center justify-center p-4 w-full text-white">
+            <div class="flex items-center justify-between w-full px-8 py-5 space-x-4 rounded-xl lg:space-x-24 bg-[#232325] backdrop-blur-md bg-opacity-70">
                 <a href="#hero-section" class="block cursor-pointer text-2xl font-bold text-primary">
                     AZIUS
                 </a>
 
                 <div class="flex items-center space-x-8">
                     @foreach ($navigation as $nav)
-                    <a href="{{ $nav['url'] }}" class="text-gray-300 hover:text-primary duration-300">
+                    <a href="{{ $nav['url'] }}" class="text-gray-200 hover:text-white duration-300">
                         {{ $nav['title'] }}
                     </a>
                     @endforeach
@@ -70,9 +72,8 @@ $backgroundColor = $data['background_color'] ?? '#131313';
 
                 <div class="flex items-center space-x-6">
                     @foreach ($socials as $social)
-                    <a href="{{ $social['url'] }}" class="text-gray-300 hover:text-primary duration-300">
-                        {{ $social['title'] }}
-                        {{-- <i class="{{ $social['icon'] }}"></i> --}}
+                    <a href="{{ $social['url'] }}" target="_blank" class="grid place-content-center text-gray-200 text-2xl hover:text-white duration-300">
+                        <iconify-icon icon="{{ $social['icon'] }}" noobserver></iconify-icon>
                     </a>
                     @endforeach
                 </div>

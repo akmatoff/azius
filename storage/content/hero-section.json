@@ -7,7 +7,7 @@
     "title": "Azius",
     "subtitle": "Премиальные продукты из родины заснеженных вершин и уникальных историй.",
     "background_image": {
-        "src": "https://example.com/background.jpg",
+        "src": "images/hero-img.jpeg",
         "alt": "Background Image"
     },
     "background_color": "#131313"
