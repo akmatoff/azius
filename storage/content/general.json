@@ -1,6 +1,6 @@
 {
     "title": "Azius",
-    "logo": "images/hero-logo.png",
+    "logo": "/images/hero-logo.png",
     "primary_color": "#4F46E5",
     "background_color": "#313131",
     "socials": [

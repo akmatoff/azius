@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('landing');
 });
 
+Route::get('/work/{slug}', function () {
+    return view('work');
+});
+
 Route::get('/admin', function () {
     return view('admin');
 })->middleware(['auth', 'verified'])->name('admin');
