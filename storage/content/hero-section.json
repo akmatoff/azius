@@ -1,8 +1,8 @@
 {
     "id"    : "hero-section",
     "logo": {
-        "src": "https://example.com/logo.png",
-        "alt": "Company Logo"
+        "src": "images/hero-logo.png",
+        "alt": "Azius Logo"
     },
     "title": "Azius",
     "subtitle": "Премиальные продукты из родины заснеженных вершин и уникальных историй.",

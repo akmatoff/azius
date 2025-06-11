@@ -5,6 +5,7 @@ $navigation = $data['navigation'] ?? [];
 $socials = $data['socials'] ?? [];
 $primaryColor = $data['primary_color'] ?? '#4F46E5';
 $backgroundColor = $data['background_color'] ?? '#131313';
+$hero = json_decode(file_get_contents(storage_path('content/hero-section.json')), true);
 @endphp
 
 <!DOCTYPE html>
@@ -21,11 +22,13 @@ $backgroundColor = $data['background_color'] ?? '#131313';
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
 
     <style>
         :root {
@@ -53,13 +56,12 @@ $backgroundColor = $data['background_color'] ?? '#131313';
     </style>
 </head>
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-gray-100">
-
+    <div class="min-h-screen">
         <!-- Page Heading -->
-        <header class="fixed flex items-center justify-center p-4 w-full text-white">
+        <header class="fixed flex items-center justify-center p-4 w-full text-white z-20">
             <div class="flex items-center justify-between w-full px-8 py-5 space-x-4 rounded-xl lg:space-x-24 bg-[#232325] backdrop-blur-md bg-opacity-70">
                 <a href="#hero-section" class="block cursor-pointer text-2xl font-bold text-primary">
-                    AZIUS
+                    <img src="{{ $data['logo'] }}" alt="Logo" class="w-20">
                 </a>
 
                 <div class="flex items-center space-x-8">
@@ -81,9 +83,21 @@ $backgroundColor = $data['background_color'] ?? '#131313';
         </header>
 
         <!-- Page Content -->
-        <main>
+        <main class="flex flex-col items-center">
             {{ $slot }}
         </main>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lenis = new Lenis({
+                autoRaf: true
+                , lerp: 0.12
+                , smoothWheel: true
+            });
+
+        });
+
+    </script>
 </body>
 </html>

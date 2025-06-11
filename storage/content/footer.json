@@ -3,18 +3,18 @@
     "items": [
         {
             "title": "",
-            "description": "",
-            "icon": null
+            "value": "Кыргызская Республика, 720028 г. Бишкек,ул. Токомбаева 23/1, офис 10",
+            "icon": "f7:placemark-fill"
         },
         {
             "title": "",
-            "description": "",
-            "icon": null
+            "value": "+996 (312) 88 88 45",
+            "icon": "material-symbols:call"
         },
         {
             "title": "",
-            "description": "",
-            "icon": null
+            "value": "ausupov@azius.kg",
+            "icon": "ic:round-email"
         }
     ]
 }
