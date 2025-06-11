@@ -11,8 +11,8 @@
 
     // Parse markdown descriptions to HTML
     if (!empty($work['items'])) {
-        foreach ($work['items'] as &$item) {
-            $item['content_html'] = Str::markdown($item['content'] ?? '');
+        foreach ($work['items'] as &$work_item) {
+            $work_item['content_html'] = Str::markdown($work_item['content'] ?? '');
         }
     }
 @endphp
@@ -95,16 +95,20 @@
 
             <!-- Modal -->
             <div x-show="open"
-                class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 p-2 md:px-10 md:py-6"
+                class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 p-2 md:px-10 md:py-6"
                 style="display: none;">
-                <div class="bg-white rounded-lg h-full w-full p-4 md:p-8 relative duration-500 transition-all md:w-[80%] lg:w-[65%] overflow-y-auto"
+                <div class="bg-white rounded-lg h-full w-full p-4 md:p-8 relative shadow-sm border duration-500 transition-all md:w-[80%] lg:w-[65%] overflow-y-auto"
                     @click.away="open = false" @click.stop>
                     <button class="absolute top-5 right-5 text-gray-600 hover:text-gray-900 font-bold text-2xl"
                         @click="open = false" aria-label="Close modal"><iconify-icon
                             icon="ic:outline-close"></iconify-icon></button>
 
                     <template x-if="selectedItem">
-                        <div x-html="selectedItem.content_html">
+                        <div class="space-y-2">
+                            <h1 x-text="selectedItem.title" class="font-bold text-3xl"></h1>
+                            <div x-html="selectedItem.content_html" class="text-lg text-gray-500">
+
+                            </div>
                         </div>
                     </template>
                 </div>
