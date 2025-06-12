@@ -1,3 +1,20 @@
+@php
+    $locale = app()->getLocale();
+
+    $data = json_decode(file_get_contents(storage_path('content/general.json')), true);
+    $hero = json_decode(file_get_contents(storage_path('content/hero-section.json')), true);
+    $about = json_decode(file_get_contents(storage_path('content/about-section.json')), true);
+    $work = json_decode(file_get_contents(storage_path('content/work-section.json')), true);
+    $footer = json_decode(file_get_contents(filename: storage_path(path: 'content/footer.json')), true);
+
+    $data = $data[$locale] ?? $data['ru'];
+    $hero = $hero[$locale] ?? $hero['ru'];
+    $about = $about[$locale] ?? $about['ru'];
+    $work = $work[$locale] ?? $work['ru'];
+    $footer = $footer[$locale] ?? $footer['ru'];
+
+@endphp
+
 <x-admin-layout>
     <main class="space-y-4 p-8">
         <!-- Tab buttons -->
@@ -21,7 +38,8 @@
 
         <!-- Tab content -->
         <div id="general" class="tab-content block p-4">
-            Content for Tab 1
+            <x-input-label>Название</x-input-label>
+            <x-text-input value="{{ $data['title'] }}"></x-text-input>
         </div>
 
         <div id="hero" class="tab-content hidden p-4">

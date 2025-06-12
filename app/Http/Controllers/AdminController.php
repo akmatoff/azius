@@ -11,7 +11,7 @@ class AdminController extends Controller
     {
         $locale = $request->input('locale', 'ru');
 
-        $sections = ['general', 'hero', 'about', 'work', 'footer'];
+        $sections = ['general', 'hero', 'about', 'work', 'contacts'];
 
         foreach ($sections as $section) {
             if ($request->has($section)) {
