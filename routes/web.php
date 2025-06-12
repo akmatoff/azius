@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -12,17 +13,17 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => 'en|ru']], functio
     Route::get('/', function () {
         return view('landing');
     })->name('home');
-});
 
-
-
-Route::get('/work/{slug}', function () {
-    return view('work');
+    Route::get('/work/{slug}', function () {
+        return view('work');
+    });
 });
 
 Route::get('/admin', function () {
     return view('admin');
 })->middleware(['auth', 'verified'])->name('admin');
+
+Route::post('/admin/save', [AdminController::class, 'save'])->middleware(['auth', 'verified'])->name('admin.save');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
