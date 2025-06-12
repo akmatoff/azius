@@ -1,14 +1,30 @@
 {
-    "id"    : "hero-section",
-    "logo": {
-        "src": "images/hero-logo.png",
-        "alt": "Azius Logo"
+    "ru": {
+        "id": "hero-section",
+        "logo": {
+            "src": "images/hero-logo.png",
+            "alt": "Azius Logo"
+        },
+        "title": "Azius",
+        "subtitle": "Премиальные продукты из родины заснеженных вершин и уникальных историй.",
+        "background_image": {
+            "src": "images/hero-img.jpeg",
+            "alt": "Background Image"
+        },
+        "background_color": "#131313"
     },
-    "title": "Azius",
-    "subtitle": "Премиальные продукты из родины заснеженных вершин и уникальных историй.",
-    "background_image": {
-        "src": "images/hero-img.jpeg",
-        "alt": "Background Image"
-    },
-    "background_color": "#131313"
+    "en": {
+        "id": "hero-section",
+        "logo": {
+            "src": "images/hero-logo.png",
+            "alt": "Azius Logo"
+        },
+        "title": "Azius",
+        "subtitle": "Premium products from the homeland of snow-capped peaks and unique stories.",
+        "background_image": {
+            "src": "images/hero-img.jpeg",
+            "alt": "Background Image"
+        },
+        "background_color": "#131313"
+    }
 }

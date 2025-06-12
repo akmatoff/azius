@@ -1,20 +1,42 @@
 {
-    "id": "footer",
-    "items": [
-        {
-            "title": "",
-            "value": "Кыргызская Республика, 720028 г. Бишкек,ул. Токомбаева 23/1, офис 10",
-            "icon": "f7:placemark-fill"
-        },
-        {
-            "title": "",
-            "value": "+996 (312) 88 88 45",
-            "icon": "material-symbols:call"
-        },
-        {
-            "title": "",
-            "value": "ausupov@azius.kg",
-            "icon": "ic:round-email"
-        }
-    ]
+    "ru": {
+        "id": "footer",
+        "items": [
+            {
+                "title": "",
+                "value": "Кыргызская Республика, 720028 г. Бишкек,ул. Токомбаева 23/1, офис 10",
+                "icon": "f7:placemark-fill"
+            },
+            {
+                "title": "",
+                "value": "+996 (312) 88 88 45",
+                "icon": "material-symbols:call"
+            },
+            {
+                "title": "",
+                "value": "ausupov@azius.kg",
+                "icon": "ic:round-email"
+            }
+        ]
+    },
+    "en": {
+        "id": "footer",
+        "items": [
+            {
+                "title": "",
+                "value": "Office 10, bldg. 23/1 Tokombaev Street, Bishkek 720028, the Kyrgyz Republic",
+                "icon": "f7:placemark-fill"
+            },
+            {
+                "title": "",
+                "value": "+996 (312) 88 88 45",
+                "icon": "material-symbols:call"
+            },
+            {
+                "title": "",
+                "value": "ausupov@azius.kg",
+                "icon": "ic:round-email"
+            }
+        ]
+    }
 }

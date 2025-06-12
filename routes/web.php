@@ -4,8 +4,17 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('landing');
+    $locale = session('locale', 'ru');
+    return redirect($locale);
 });
+
+Route::group(['prefix' => '{locale}', 'where' => ['locale' => 'en|ru']], function () {
+    Route::get('/', function () {
+        return view('landing');
+    })->name('home');
+});
+
+
 
 Route::get('/work/{slug}', function () {
     return view('work');
@@ -21,4 +30,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

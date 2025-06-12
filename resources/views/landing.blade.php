@@ -1,13 +1,19 @@
 @php
     use Illuminate\Support\Str;
 
+    $locale = app()->getLocale();
+
     $data = json_decode(file_get_contents(storage_path('content/general.json')), true);
     $hero = json_decode(file_get_contents(storage_path('content/hero-section.json')), true);
     $about = json_decode(file_get_contents(storage_path('content/about-section.json')), true);
     $work = json_decode(file_get_contents(storage_path('content/work-section.json')), true);
     $footer = json_decode(file_get_contents(filename: storage_path(path: 'content/footer.json')), true);
 
-    $work = json_decode(file_get_contents(storage_path('content/work-section.json')), true);
+    $data = $data[$locale] ?? $data['ru'];
+    $hero = $hero[$locale] ?? $hero['ru'];
+    $about = $about[$locale] ?? $about['ru'];
+    $work = $work[$locale] ?? $work['ru'];
+    $footer = $footer[$locale] ?? $footer['ru'];
 
     // Parse markdown descriptions to HTML
     if (!empty($work['items'])) {

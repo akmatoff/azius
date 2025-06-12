@@ -1,27 +1,56 @@
 {
-    "id": "about-section",
-    "title": "О нас",
-    "description": "AZIUS - мультипроектная компания, базирующаяся в г. Бишкек, Кыргызстан. Компания производит переработанные сельскохозяйственные продукты премиального качества, материалы для горной промышленности и ведет проекты жилищного строительства.",
-    "backgroundImage": {
-        "src": "https://example.com/background.jpg",
-        "alt": "Background Image"
+    "ru": {
+        "id": "about-section",
+        "title": "О нас",
+        "description": "AZIUS - мультипроектная компания, базирующаяся в г. Бишкек, Кыргызстан. Компания производит переработанные сельскохозяйственные продукты премиального качества, материалы для горной промышленности и ведет проекты жилищного строительства.",
+        "backgroundImage": {
+            "src": "https://example.com/background.jpg",
+            "alt": "Background Image"
+        },
+        "background_color": "#f2f2f2",
+        "items": [
+            {
+                "title": "",
+                "icon": "mdi:scale-balance",
+                "description": "Одна из главных ценностей компании - бескомпромиссная верность высокому качеству. Вся продукция отвечает международным стандартам и пригодна для использования и эксплуатации в любой точке планеты."
+            },
+            {
+                "title": "",
+                "icon": "mdi:map-marker-check",
+                "description": "“Made in Kyrgyzstan” - основной вектор развития и приоритета в компании. Нами движет желание возродить былую славу кыргызских предприятий и создать премиальный имидж страны."
+            },
+            {
+                "title": "",
+                "icon": "mdi:earth",
+                "description": "С самого первого дня компания придерживается стратегии социально ответственного бизнеса. Мы верим, что бизнес должен способствовать экономическому и этическому развитию общества."
+            }
+        ]
     },
-    "background_color": "#f2f2f2",
-    "items": [
-        {
-            "title": "",
-            "icon": "mdi:scale-balance",
-            "description": "Одна из главных ценностей компании - бескомпромиссная верность высокому качеству. Вся продукция отвечает международным стандартам и пригодна для использования и эксплуатации в любой точке планеты."
+    "en": {
+        "id": "about-section",
+        "title": "About Us",
+        "description": "AZIUS is a multiproject company based in Bishkek, Kyrgyzstan. The company produces processed agricultural premium quality products, materials for the mining industry and leads housing projects.",
+        "backgroundImage": {
+            "src": "https://example.com/background.jpg",
+            "alt": "Background Image"
         },
-        {
-            "title": "",
-            "icon": "mdi:map-marker-check",
-            "description": "“Made in Kyrgyzstan” - основной вектор развития и приоритета в компании. Нами движет желание возродить былую славу кыргызских предприятий и создать премиальный имидж страны."
-        },
-        {
-            "title": "",
-            "icon": "mdi:earth",
-            "description": "С самого первого дня компания придерживается стратегии социально ответственного бизнеса. Мы верим, что бизнес должен способствовать экономическому и этическому развитию общества."
-        }
-    ]
+        "background_color": "#f2f2f2",
+        "items": [
+            {
+                "title": "",
+                "icon": "mdi:scale-balance",
+                "description": "One of the main values of the company is an uncompromising commitment to high quality. All products meet international standards and are suitable for use and operation anywhere in the world."
+            },
+            {
+                "title": "",
+                "icon": "mdi:map-marker-check",
+                "description": "“Made in Kyrgyzstan” is the main vector of development and priority in the company. We are driven by the desire to revive the former glory of Kyrgyz enterprises and create a premium image of the country."
+            },
+            {
+                "title": "",
+                "icon": "mdi:earth",
+                "description": "From the very first day, the company has adhered to the strategy of socially responsible business. We believe that businesses should contribute to the economic and ethical development of society."
+            }
+        ]
+    }
 }

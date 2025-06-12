@@ -1,32 +1,66 @@
 {
-    "title": "Azius",
-    "logo": "/images/hero-logo.png",
-    "primary_color": "#4F46E5",
-    "background_color": "#313131",
-    "socials": [
-        {
-            "title": "Instagram",
-            "url": "https://www.instagram.com/yourprofile",
-            "icon": "mdi:instagram"
-        },
-        {
-            "title": "WhatsApp",
-            "url": "https://www.instagram.com/yourprofile",
-            "icon": "mdi:whatsapp"
-        }
-    ],
-    "navigation": [
-        {
-            "title": "О нас",
-            "url": "#about-section"
-        },
-        {
-            "title": "Сферы деятельности",
-            "url": "#work-section"
-        },
-        {
-            "title": "Контакты",
-            "url": "#footer"
-        }
-    ]
+    "ru": {
+        "title": "Azius",
+        "logo": "/images/hero-logo.png",
+        "primary_color": "#4F46E5",
+        "background_color": "#313131",
+        "socials": [
+            {
+                "title": "Instagram",
+                "url": "https://www.instagram.com/yourprofile",
+                "icon": "mdi:instagram"
+            },
+            {
+                "title": "WhatsApp",
+                "url": "https://www.instagram.com/yourprofile",
+                "icon": "mdi:whatsapp"
+            }
+        ],
+        "navigation": [
+            {
+                "title": "О нас",
+                "url": "#about-section"
+            },
+            {
+                "title": "Сферы деятельности",
+                "url": "#work-section"
+            },
+            {
+                "title": "Контакты",
+                "url": "#footer"
+            }
+        ]
+    },
+    "en": {
+        "title": "Azius",
+        "logo": "/images/hero-logo.png",
+        "primary_color": "#4F46E5",
+        "background_color": "#313131",
+        "socials": [
+            {
+                "title": "Instagram",
+                "url": "https://www.instagram.com/yourprofile",
+                "icon": "mdi:instagram"
+            },
+            {
+                "title": "WhatsApp",
+                "url": "https://www.instagram.com/yourprofile",
+                "icon": "mdi:whatsapp"
+            }
+        ],
+        "navigation": [
+            {
+                "title": "About Us",
+                "url": "#about-section"
+            },
+            {
+                "title": "Areas of Activity",
+                "url": "#work-section"
+            },
+            {
+                "title": "Contacts",
+                "url": "#footer"
+            }
+        ]
+    }
 }

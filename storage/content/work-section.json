@@ -1,27 +1,52 @@
-
 {
-    "id": "work-section",
-    "title": "Наша продукция",
-    "subtitle": "",
-    "items": [
-        {
-            "image": "images/wood-round2.jpg",
-            "title": "Материалы для горной промышленности", 
-            "description": "Лесоматериалы и металлические крепи, пригодные для горнорудной и гражданской строительной деятельности.",
-            "content": "# Проверка контента" 
-        },
-        {
-            "image": "images/продукты-питания.jpeg",
-            "title": "Продукты питания",
-            "description": "Премиальные продукты питания, включая мед, джемы, натуральные соки прямого отжима, ферментированные молочные продукты.",
-            "content": "wooo"
-
-        },
-        {
-            "image": "images/build1.jpg", 
-            "title": "Жилищное строительство",
-            "description": "Разработка и осуществление проектов жилищных строений.",
-            "content": "goo"
-        }
-    ]
+    "ru": {
+        "id": "work-section",
+        "title": "Наша продукция",
+        "subtitle": "",
+        "items": [
+            {
+                "image": "images/wood-round2.jpg",
+                "title": "Материалы для горной промышленности",
+                "description": "Лесоматериалы и металлические крепи, пригодные для горнорудной и гражданской строительной деятельности.",
+                "content": "# Проверка контента"
+            },
+            {
+                "image": "images/продукты-питания.jpeg",
+                "title": "Продукты питания",
+                "description": "Премиальные продукты питания, включая мед, джемы, натуральные соки прямого отжима, ферментированные молочные продукты.",
+                "content": "wooo"
+            },
+            {
+                "image": "images/build1.jpg",
+                "title": "Жилищное строительство",
+                "description": "Разработка и осуществление проектов жилищных строений.",
+                "content": "goo"
+            }
+        ]
+    },
+    "en": {
+        "id": "work-section",
+        "title": "Areas of Activity",
+        "subtitle": "",
+        "items": [
+            {
+                "image": "images/wood-round2.jpg",
+                "title": "Mining materials",
+                "description": "Timber and metal lining suitable for mining and civil construction activities.",
+                "content": "# Проверка контента"
+            },
+            {
+                "image": "images/продукты-питания.jpeg",
+                "title": "Food",
+                "description": "Premium food products including honey, jams, natural juices, fermented dairy products.",
+                "content": "wooo"
+            },
+            {
+                "image": "images/build1.jpg",
+                "title": "Housing construction",
+                "description": "Development and implementation of housing projects.",
+                "content": "goo"
+            }
+        ]
+    }
 }

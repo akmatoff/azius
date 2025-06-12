@@ -1,11 +1,16 @@
 @php
+    $locale = app()->getLocale();
+
     $data = json_decode(file_get_contents(storage_path('content/general.json')), true);
     $title = $data['title'] ?? 'Azius';
-    $navigation = $data['navigation'] ?? [];
-    $socials = $data['socials'] ?? [];
+    $navigation = $data[$locale]['navigation'] ?? [];
+    $socials = $data[$locale]['socials'] ?? [];
     $primaryColor = $data['primary_color'] ?? '#4F46E5';
     $backgroundColor = $data['background_color'] ?? '#131313';
     $hero = json_decode(file_get_contents(storage_path('content/hero-section.json')), true);
+
+    $data = $data[$locale] ?? $data['ru'];
+
 @endphp
 
 <!DOCTYPE html>
@@ -17,8 +22,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,14 +81,25 @@
                     @endforeach
                 </div>
 
-                <div class="flex items-center space-x-6">
-                    @foreach ($socials as $social)
-                        <a href="{{ $social['url'] }}" target="_blank"
-                            class="grid place-content-center text-gray-200 text-3xl hover:text-white duration-300">
-                            <iconify-icon icon="{{ $social['icon'] }}" noobserver></iconify-icon>
-                        </a>
-                    @endforeach
+                <div class="flex items-center space-x-8">
+                    <div class="flex items-center space-x-4">
+                        @foreach ($socials as $social)
+                            <a href="{{ $social['url'] }}" target="_blank"
+                                class="grid place-content-center text-gray-200 text-3xl hover:text-white duration-300">
+                                <iconify-icon icon="{{ $social['icon'] }}" noobserver></iconify-icon>
+                            </a>
+                        @endforeach
+                    </div>
+
+                    <div class="flex space-x-2">
+                        <a href="{{ route('home', ['locale' => 'en']) }}"
+                            class="border py-1 px-2 rounded-lg text-gray-200 hover:underline hover:text-white hover:border-white duration-500">EN</a>
+                        <a href="{{ route('home', ['locale' => 'ru']) }}"
+                            class="border py-1 px-2 rounded-lg text-gray-200 hover:underline hover:text-white hover:border-white duration-500">RU</a>
+                    </div>
                 </div>
+
+
             </div>
         </header>
 
